@@ -58,8 +58,7 @@ const Header: React.FC = () => {
           >
             <a
               className={`download-link`}
-              href="#telecharger"
-              onClick={handleClick}
+              href="https://apps.apple.com/fr/app/whentocop/id1542957217"
             >
               Télécharge l'application
             </a>
