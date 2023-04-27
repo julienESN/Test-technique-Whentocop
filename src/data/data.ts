@@ -1,4 +1,14 @@
-export const drops_data = [
+export interface DropData {
+  id: number;
+  brandName: string;
+  modelName: string;
+  resellIndex: string;
+  colorName: string;
+  imagePath: string;
+}
+
+
+export const drops_data: DropData[] = [
   {
     id: 1,
     brandName: 'air jordan 1 high retro oG',
