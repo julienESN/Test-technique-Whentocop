@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import './Header.css';
 
 // Composant Header pour afficher l'en-tête du site
 const Header: React.FC = () => {

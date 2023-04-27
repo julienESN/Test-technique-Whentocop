@@ -1,0 +1,71 @@
+/* Styles généraux pour le filtre de drops */
+.drops-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+}
+
+/* Styles pour le titre "Drops" */
+.drops-filter h2 {
+  font-weight: 800;
+  font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Styles pour les écrans mobiles (taille inférieure à 768px) */
+@media (max-width: 768px) {
+  /* Modifier la disposition du filtre de drops pour les écrans mobiles */
+  .drops-filter {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: flex-start; /* Ajoutez cette ligne */
+  }
+
+  /* Ajouter une marge supérieure au sélecteur pour les écrans mobiles */
+  .filter-select {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Styles pour l'indicateur de couleur des options du sélecteur */
+.color-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Appliquer la police Montserrat au contrôle et au menu du composant react-select */
+.react-select__control,
+.react-select__menu {
+  font-family: 'Montserrat', sans-serif;
+}
+.no-select {
+  user-select: none;
+}
+
+.no-select * {
+  user-select: none;
+}
+/* Définir l'animation slide-down pour le menu déroulant */
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation slide-down au menu déroulant */
+.react-select__menu {
+  animation: slide-down 0.3s ease-out;
+}
