@@ -23,10 +23,10 @@ const DropsFilter: React.FC<DropsFilterProps> = ({ onFilterChange }) => {
   // Définir les options pour le sélecteur
   const options = [
     { value: 'all', label: 'Tous les resell' },
-    { value: 'excellent', label: 'Excellent resell', color: '#5D19FF' },
-    { value: 'good', label: 'Good resell', color: '#00FFB0' },
+    { value: 'Excellent Resell', label: 'Excellent resell', color: '#5D19FF' },
+    { value: 'Bon Resell', label: 'Bon resell', color: '#00FFB0' },
     { value: 'average', label: 'Moyen resell', color: '#FEC005' },
-    { value: 'poor', label: 'Mauvais resell', color: '#FF0000' },
+    { value: 'Mauvais Resell', label: 'Mauvais resell', color: '#FF0000' },
   ];
 
   // Fonction pour formater les étiquettes des options du sélecteur
